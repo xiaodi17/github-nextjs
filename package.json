@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ioredis": "^4.16.0",
     "koa": "^2.11.0",
     "koa-router": "^8.0.8",
     "next": "^9.2.2",
