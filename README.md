@@ -14,6 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. cd to project root
 2. yarn install
+3. Create your own config.js (see config.sample.js)
 
 ### Running locally
 1. redis-server
