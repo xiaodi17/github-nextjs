@@ -77,7 +77,7 @@ function MyLayout({ children, user, logout, router }) {
     <Menu>
       <Menu.Item>
         <a href="javascript:void(0)" onClick={handleLogout}>
-          Log out
+          Sign out
         </a>
       </Menu.Item>
     </Menu>

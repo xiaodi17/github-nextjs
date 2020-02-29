@@ -23,7 +23,7 @@ function SearchUser({ onChange, value }) {
 
       api
         .request({
-          url: `/search/users?q=${value}`,
+          url: `/search/users?q=${value}`
         })
         .then(resp => {
           console.log('user:', resp)
@@ -32,14 +32,14 @@ function SearchUser({ onChange, value }) {
           }
           const data = resp.data.items.map(user => ({
             text: user.login,
-            value: user.login,
+            value: user.login
           }))
 
           setFetching(false)
           setOptions(data)
         })
     }, 500),
-    [],
+    []
   )
 
   const handleChange = value => {
@@ -54,7 +54,7 @@ function SearchUser({ onChange, value }) {
       showSearch={true}
       notFoundContent={fetching ? <Spin size="small" /> : <span>nothing</span>}
       filterOption={false}
-      placeholder="创建者"
+      placeholder="Owner"
       value={value}
       onChange={handleChange}
       onSearch={fetchUser}

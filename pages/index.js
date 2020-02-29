@@ -90,12 +90,12 @@ function Index({ userRepos, userStaredRepos, user, router }) {
           <Repo repo={repo} />
         ))} */}
         <Tabs activeKey={tabKey} onChange={handleTabChange} animated={false}>
-          <Tabs.TabPane tab="你的仓库" key="1">
+          <Tabs.TabPane tab="Repositories" key="1">
             {userRepos.map(repo => (
               <Repo key={repo.id} repo={repo} />
             ))}
           </Tabs.TabPane>
-          <Tabs.TabPane tab="你关注的仓库" key="2">
+          <Tabs.TabPane tab="Stars" key="2">
             {userStaredRepos.map(repo => (
               <Repo key={repo.id} repo={repo} />
             ))}
