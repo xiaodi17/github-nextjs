@@ -7,7 +7,7 @@ class RedisSessionStore {
     this.client = client
   }
 
-  //获取Redis中存储的session数据
+  //get session from redis
   async get(sid) {
     console.log('get session', sid)
     const id = getRedisSessionId(sid)
@@ -23,7 +23,7 @@ class RedisSessionStore {
     }
   }
 
-  // 存储session数据到redis
+  // save session to redis
   async set(sid, sess, ttl) {
     console.log('set session', sid)
     const id = getRedisSessionId(sid)
