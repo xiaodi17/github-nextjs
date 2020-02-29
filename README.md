@@ -1,5 +1,5 @@
 # github-nextjs
-mimic github repo with nextjs and Koa
+This project is a mimic github built with nextjs and Koa. You can log into your own github account and view your repositories and stars. You can also search for other people's github.
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
