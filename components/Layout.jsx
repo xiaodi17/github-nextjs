@@ -14,7 +14,7 @@ import {
   Avatar,
   Tooltip,
   Dropdown,
-  Menu,
+  Menu
 } from 'antd'
 
 import Container from './Container'
@@ -30,11 +30,11 @@ const githubIconStyle = {
   fontSize: 40,
   display: 'block',
   paddingTop: 10,
-  marginRight: 20,
+  marginRight: 20
 }
 
 const footerStyle = {
-  textAlign: 'center',
+  textAlign: 'center'
 }
 
 function MyLayout({ children, user, logout, router }) {
@@ -46,7 +46,7 @@ function MyLayout({ children, user, logout, router }) {
     event => {
       setSearch(event.target.value)
     },
-    [setSearch],
+    [setSearch]
   )
 
   const handleOnSearch = useCallback(() => {
@@ -77,7 +77,7 @@ function MyLayout({ children, user, logout, router }) {
     <Menu>
       <Menu.Item>
         <a href="javascript:void(0)" onClick={handleLogout}>
-          登 出
+          Log out
         </a>
       </Menu.Item>
     </Menu>
@@ -95,7 +95,7 @@ function MyLayout({ children, user, logout, router }) {
             </div>
             <div>
               <Input.Search
-                placeholder="搜索仓库"
+                placeholder="search repo"
                 value={search}
                 onChange={handleSearchChange}
                 onSearch={handleOnSearch}
@@ -111,7 +111,7 @@ function MyLayout({ children, user, logout, router }) {
                   </a>
                 </Dropdown>
               ) : (
-                <Tooltip title="点击进行登录">
+                <Tooltip title="Click to login">
                   <a href={`/prepare-auth?url=${router.asPath}`}>
                     <Avatar size={40} icon="user" />
                   </a>
@@ -125,8 +125,8 @@ function MyLayout({ children, user, logout, router }) {
         <Container>{children}</Container>
       </Content>
       <Footer style={footerStyle}>
-        Develop by Jokcy @
-        <a href="mailto:jokcy@hotmail.com">jokcy@hotmail.com</a>
+        Develop by David @
+        <a href="mailto:xiaodi.david@gmail.com">xiaodi.david@gmail.com</a>
       </Footer>
       <style jsx>{`
         .content {
@@ -163,12 +163,12 @@ function MyLayout({ children, user, logout, router }) {
 export default connect(
   function mapState(state) {
     return {
-      user: state.user,
+      user: state.user
     }
   },
   function mapReducer(dispatch) {
     return {
-      logout: () => dispatch(logout()),
+      logout: () => dispatch(logout())
     }
-  },
+  }
 )(withRouter(MyLayout))

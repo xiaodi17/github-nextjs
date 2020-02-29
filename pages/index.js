@@ -56,9 +56,9 @@ function Index({ userRepos, userStaredRepos, user, router }) {
   if (!user || !user.id) {
     return (
       <div className="root">
-        <p>亲，您还没有登录哦~</p>
+        <p>You have not login yet~</p>
         <Button type="primary" href={publicRuntimeConfig.OAUTH_URL}>
-          点击登录
+          Click to Login
         </Button>
         <style jsx>{`
           .root {
