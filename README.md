@@ -13,12 +13,12 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 1. cd to project root
-2. yarn install
-3. Create your own config.js (see config.sample.js)
+2. ```yarn install``` to install dependencies
+3. Create your own ```config.js``` (see ```config.sample.js```)
 
 ### Running locally
-1. redis-server
-2. yarn dev
+1. ```redis-server``` start redis server
+2. ```yarn dev``` run project locally
 3. open http://localhost:3000
 
 ### Todo
