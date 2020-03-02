@@ -23,4 +23,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Todo
 1. Search for other people's repo in Github
-2. Repo detail page
+2. Complete Repo detail page
